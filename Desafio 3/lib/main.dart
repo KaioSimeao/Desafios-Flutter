@@ -118,13 +118,21 @@ class _MyHomePageState extends State<MyHomePage> {
             const SizedBox(
               height: 200,
             ),
-            const ElevatedButton(
-              onPressed: null,
-              child: Text('Jogo casado'),
+            TextButton(
+              onPressed: () {},
+              child: Text(
+                'Jogo casado',
+                style: TextStyle(color: Colors.grey[50]),
+              ),
             ),
-            const ElevatedButton(
-              onPressed: null,
-              child: Text('Iniciar'),
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                backgroundColor: const Color.fromARGB(255, 8, 27, 173),
+              ),
+              onPressed: () {},
+              child: const Text(
+                'Iniciar',
+              ),
             ),
           ],
         ),
